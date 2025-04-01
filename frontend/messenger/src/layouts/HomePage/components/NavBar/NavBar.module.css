@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.container {
+    background-color: #1A1A1A;
+    border-right: 2px solid #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 30px);
+    width: 100%;
+}
+
+
+.iconGroupContainer {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconContainer {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+.activeIcon {
+    background-color: #363636;
+}
+
+.icon {
+    color: #B0B3B8;
+    font-size: 20px;
+}
+
+.actIcon {
+    color: #ffffff;
+}
+
+.iconContainer:hover {
+    background-color: #434343;
+    cursor: pointer;
+}
+
+.iconUserContainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 75px;
+}
+
+.iconUser {
+    border-radius: 50%;
+    cursor: pointer;
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+}
+
+.iconUser:hover {
+    filter: grayscale(35%);
+}

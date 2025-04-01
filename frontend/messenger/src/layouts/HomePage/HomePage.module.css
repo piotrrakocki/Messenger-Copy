@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 75px 1fr 3fr;
+    background-color: #171717;
+    width: 100vw;
+    height: 100vh;
+}
+
+.chatGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: calc(100vh);
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh);
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #494949 #1f1f1f;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #1f1f1f;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #494949;
+    border-radius: 0px;
+    border: 0px solid #1f1f1f;
+}

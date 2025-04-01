@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding-top: 30px;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+}
+
+.formContainer {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    width: 432px;
+}
+
+.inputContainer {
+    padding: 16px;
+}
+
+.textContainer {
+    padding: 10px 16px;
+    border-bottom: 1px solid #dadde1;
+    text-align: center;
+}
+
+.textContainer h2 {
+    font-size: 25px;
+    line-height: 32px;
+}
+
+.textContainer p {
+    color: #606770;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.nameContainer {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.nameContainer input[type="text"] {
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    line-height: 16px;
+    height: 40px;
+    flex: 1;
+}
+
+.nameContainer input::placeholder {
+    padding: 12px;
+}
+
+.dateContainer {
+    margin-bottom: 10px;
+}
+
+.dateContainer p {
+    font-size: 12px;
+    color: #606770;
+    margin-bottom: 4px;
+}
+
+.dateSelectContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.dateSelectContainer select {
+    border: 1px solid #ccd0d5;
+    height: 36px;
+    width: 100%;
+    padding: 0 20px 0 8px;
+}
+
+.genderContainer {
+    margin-bottom: 10px;
+}
+
+.genderContainer p {
+    font-size: 12px;
+    color: #606770;
+    margin-bottom: 4px;
+}
+
+.genderlabelContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    gap: 5px;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    height: 36px;
+    width: 100%;
+    padding: 0 28px 0 10px;
+}
+
+.emailContainer {
+    margin-bottom: 10px;
+}
+
+.emailContainer input[type="email"] {
+    border: 1px solid #ccd0d5;
+    height: 40px;
+    width: 100%;
+    padding: 12px;
+}
+
+.passwordContainer {
+    margin-bottom: 10px;
+}
+
+.passwordContainer input[type="password"] {
+    border: 1px solid #ccd0d5;
+    height: 40px;
+    width: 100%;
+    padding: 12px;
+}
+
+.policyComponent p {
+    color: #777;
+    font-size: 11px;
+    margin: 1em 0;
+}
+
+.policyComponent p a {
+    color: #385898;
+    text-decoration: none;
+}
+
+.policyComponent p a:hover {
+    text-decoration: underline;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonContainer button {
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    height: 36px;
+    padding: 0 32px;
+    text-shadow: none;
+    margin: 10px 0;
+    width: 194px;
+}
+
+.buttonContainer button:hover {
+    background-color: #009d00;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+}
+
+.haveAccount {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    padding: 10px 0;
+}
+
+.haveAccount a {
+    color: #1877f2;
+    text-decoration: none;
+}

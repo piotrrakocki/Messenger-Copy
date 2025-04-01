@@ -1,0 +1,133 @@
+/* UserSettings.module.css */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background-color: #2E2E2E;
+    padding: 25px;
+    border-radius: 12px;
+    width: 550px;
+    position: relative;
+}
+
+.modal hr {
+    border: none;
+    border-bottom: 1px solid #3E4042;
+    margin: 12px 0;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.headerContainer h2 {
+    color: #e4e6eb;
+    font-weight: 600;
+    font-size: 1.0625rem;
+}
+
+.closeButton {
+    align-items: center;
+    background-color: #545454;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 32px;
+}
+
+.closeButton:hover {
+    background-color: #656565;
+}
+
+
+
+
+
+.participantContainer {
+    align-items: center;
+    border-radius: 7px;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+}
+
+.participantContainer:hover {
+    background-color: #545454;
+}
+
+.participantDetails {
+    align-items: center;
+    display: flex;
+    padding-left: 8px;
+    width: 100%;
+}
+
+.participantDetails img {
+    border-radius: 25px;
+    height: 40px;
+    width: 40px;
+}
+
+.participantDetails input {
+    background-color: #3a3b3c;
+    border: 1px solid #3e4042;
+    border-radius: 6px;
+    color: #e4e6eb;
+    font-weight: 500;
+    font-size: .9375rem;
+    margin: 0 8px;
+    padding-left: 8px;
+    height: 36px;
+    width: 100%;
+    outline: 1px solid #2E88FF;
+}
+
+.participantName {
+    padding-left: 8px;
+}
+
+.participantName h4 {
+    color: #e4e6eb;
+    font-size: .9375rem;
+}
+
+.participantName p {
+    color: #e4e6eb;
+    font-size: .8125rem;
+    font-weight: 600;
+}
+
+.iconContainer {
+    align-items: center;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
+    margin-right: 5px;
+}
+
+.iconContainer:hover {
+    background-color: #545454;
+}
+
+.participantContainer:has(.iconContainer:hover) {
+    background-color: #2E2E2E;
+}

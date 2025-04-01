@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 15px 15px 0;
+    overflow-y: auto;
+}
+
+.headerContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgContainer img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+.imgContainer h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.0625rem;
+}
+
+.imgContainer span {
+    color: #b0b3b8;
+    font-size: .8125rem;
+}
+
+.gropuIconContainer {
+    display: flex;
+    padding: 20px 0
+}
+
+.headerListIconContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerListIconContainer span {
+    color: white;
+    font-size: .8125rem;
+}
+
+.headerIconContainer {
+    align-items: center;
+    background-color: #474747;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
+    margin: 5px 15px;
+}
+
+.headerIconContainer:hover {
+    background-color: #5A5A5A;
+}
+
+.headerIcon {
+    color: white;
+    font-size: 20px;
+}
+
+.listSettingsContainer {
+    user-select: none;
+}
+
+.collapsibleHeader {
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.collapsibleHeader:hover {
+    background-color: #474747;
+}
+
+.collapsibleHeader span {
+    color: white;
+    font-weight: 600;
+    font-size: .9375rem;
+}
+
+.faAngleRight {
+    color: white;
+    font-size: 16px;
+}
+
+.collapsibleContent:hover {
+    background-color: #474747;
+}
+
+.collapsibleContent:hover .optionIconContainer {
+    background-color: #6B6B6B;
+}
+
+.spanOption {
+    color: white;
+    font-weight: 600;
+    font-size: .9375rem;
+}
+
+.collapsibleContent {
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    height: 44px;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.collapsibleContent span {
+    color: white;
+    font-weight: 500;
+}
+
+.hideContent {
+    display: none;
+}
+
+.optionIconContainer {
+    align-items: center;
+    background-color: #4A4A4A;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    height: 28px;
+    width: 28px;
+    margin-right: 5px;
+}
+
+.optionIcon {
+    font-size: 12px;
+    color: white;
+}
+
+.membersContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px;
+    padding: 5px 10px;
+}
+
+.userContainer {
+    display: flex;
+}
+
+.awatarContainer {
+    align-items: center;
+    display: flex;
+}
+
+.awatarContainer img {
+    border-radius: 25px;
+    width: 36px;
+    height: 36px;
+}
+
+.userDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    justify-content: center;
+}
+
+.userDetailsContainer h4 {
+    color: white;
+    font-size: .9375rem;
+    font-weight: 500;
+}
+
+.userDetailsContainer span {
+    color: #b0b3b8;
+    font-size: .8125rem;
+    font-weight: normal;
+}
+
+.faEllipsisContainer {
+    align-items: center;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+}
+
+.faEllipsisContainer:hover {
+    background-color: #363636;
+}
+
+.faEllipsis {
+    color: #e4e6eb;
+    font-size: 20px;
+}
+
+.popupContainer {
+    position: relative;
+}
+
+.addPeopleContiainer {
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px;
+    padding: 5px 10px;
+}
+
+.addPeopleContiainer:hover {
+    background-color: #474747;
+}
+
+.faUserPlusContainer {
+    align-items: center;
+    background-color: #363636;
+    border-radius: 25px;
+    display: flex;
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+}
+
+.faUserPlus {
+    color: white;
+    font-size: 18px;
+}

@@ -1,0 +1,255 @@
+/* UserSettings.module.css */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background-color: #2E2E2E;
+    padding: 25px;
+    border-radius: 12px;
+    width: 550px;
+    position: relative;
+}
+
+.modal hr {
+    border: none;
+    border-bottom: 1px solid #3E4042;
+    margin: 12px 0;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.headerContainer h2 {
+    color: #e4e6eb;
+    font-weight: 600;
+    font-size: 1.0625rem;
+}
+
+.closeButton {
+    align-items: center;
+    background-color: #545454;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 32px;
+}
+
+.closeButton:hover {
+    background-color: #656565;
+}
+
+.searchContinaer {
+    align-items: center;
+    background-color: #3A3B3C;
+    border-radius: 25px;
+    display: flex;
+    height: 36px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.searchIconContainer {
+    padding-left: 15px;
+}
+
+.inputContainer {
+    padding: 0 10px;
+    width: 100%;
+}
+
+.inputContainer input {
+    background-color: #3A3B3C;
+    border: none;
+    color: white;
+    caret-color: white;
+    width: 100%;
+}
+
+.inputContainer input::placeholder {
+    color: #939394;
+}
+
+.inputContainer input:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+.selectedUserListContainer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 120px;
+}
+
+.selectedUserList {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.selectedUser {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.imageContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.profilePicture {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+
+}
+
+.faXmark {
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, .45);
+    padding: 5px;
+    position: absolute;
+    font-size: 13px;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.firstName,
+.lastName {
+    color: #b0b3b8;
+    font-size: .75rem;
+}
+
+.emptySelectedUsers {}
+
+.emptySelectedUsers p {
+    color: #b0b3b8;
+    font-size: .75rem;
+}
+
+.addPeopleBtnContainer {
+    margin-bottom: 5px;
+}
+
+.addPeopleBtn {
+    background-color: #429AFF;
+    border: none;
+    cursor: pointer;
+    color: white;
+    height: 32px;
+    width: 100%;
+}
+
+.addPeopleBtn:disabled {
+    background-color: #555555;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.usersListContainer {
+    height: 300px;
+    margin-top: 10px;
+    overflow-y: auto;
+}
+
+.userContainer {
+    align-items: center;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+}
+
+.userContainer:hover {
+    background-color: #545454;
+}
+
+.userDetails {
+    align-items: center;
+    display: flex;
+}
+
+.userDetails img {
+    border-radius: 25px;
+    height: 36px;
+    margin: 8px;
+    width: 36px;
+}
+
+.userDetails h4 {
+    color: #e4e6eb;
+    font-size: .9375rem;
+    font-weight: 500;
+}
+
+.checkboxContainer {
+    margin-left: auto;
+    padding-right: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.checkboxContainer input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.customCheckbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: #2E2E2E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="checkbox"]:checked+.customCheckbox {
+    background-color: #007BFF;
+    border-color: #007BFF;
+}
+
+.checkIcon {
+    color: #2E2E2E;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+input[type="checkbox"]:checked+.customCheckbox .checkIcon {
+    opacity: 1;
+}

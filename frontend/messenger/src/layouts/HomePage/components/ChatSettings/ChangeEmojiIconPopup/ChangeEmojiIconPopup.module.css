@@ -1,0 +1,186 @@
+/* UserSettings.module.css */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background-color: #2E2E2E;
+    padding: 25px;
+    border-radius: 12px;
+    width: 372px;
+    position: relative;
+}
+
+.modal hr {
+    border: none;
+    border-bottom: 1px solid #3E4042;
+    margin: 12px 0;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.headerContainer h2 {
+    color: #e4e6eb;
+    font-weight: 600;
+    font-size: 1.0625rem;
+}
+
+.closeButton {
+    align-items: center;
+    background-color: #545454;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 32px;
+}
+
+.closeButton:hover {
+    background-color: #656565;
+}
+
+.currentEmojiContainer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.EmojiContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.currentEmoji {
+    font-size: 24px;
+}
+
+.EmojiContainer p {
+    color: white;
+    font-size: .9375rem;
+    font-weight: 600;
+}
+
+.deleteContainer {
+    align-items: center;
+    background-color: #555555;
+    border-radius: 7px;
+    display: flex;
+    padding: 0 12px;
+    height: 32px;
+}
+
+.deleteContainer p {
+    color: white;
+    font-size: .9375rem;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.searchContinaer {
+    align-items: center;
+    background-color: #3A3B3C;
+    border-radius: 25px;
+    display: flex;
+    height: 36px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.searchIconContainer {
+    padding-left: 15px;
+}
+
+.inputContainer {
+    padding: 0 10px;
+    width: 100%;
+}
+
+.inputContainer input {
+    background-color: #3A3B3C;
+    border: none;
+    color: white;
+    caret-color: white;
+    width: 100%;
+}
+
+.inputContainer input::placeholder {
+    color: #939394;
+}
+
+.inputContainer input:focus {
+    outline: none;
+}
+
+.emojiListContainer {
+    height: 222px;
+    overflow-y: scroll;
+}
+
+.emojiList {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.emojiListContainer p {
+    color: #b0b3b8;
+    font-size: .8125rem;
+    margin: 5px 0;
+}
+
+.emoji {
+    height: 36px;
+    width: 36px;
+    align-items: center;
+    border-radius: 7px;
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 4px;
+    justify-content: center;
+}
+
+.emoji:hover {
+    background-color: #434343;
+}
+
+.categoryContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.iconContainer {
+    align-items: center;
+    border-radius: 25px;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    height: 34px;
+    width: 34px;
+}
+
+.iconContainer:hover {
+    background-color: #434343;
+}
+
+.emojiIcon {
+    color: #B0B3B8;
+}

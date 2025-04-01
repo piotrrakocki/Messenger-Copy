@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.popup {
+    position: absolute;
+    top: 100%;
+    left: -300px;
+    background-color: #1F1F1F;
+    border: 1px solid #1F1F1F;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 344px;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.searchChatContainer {
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.searchChatContainer:hover {
+    background-color: #474747;
+}
+
+.searchImgUserCircleContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.searchImgUserCircleContainer img {
+    border-radius: 25px;
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+}
+
+.userNameContainer {
+    color: #e4e6eb;
+    font-weight: 500;
+    font-size: .9375rem;
+}
